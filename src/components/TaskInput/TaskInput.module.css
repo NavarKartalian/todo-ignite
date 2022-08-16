@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.wrapper input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  font-weight: 400;
+  color: var(--gray-300);
+  background: var(--gray-500);
+}
+
+.wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--blue-500);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.wrapper button:hover {
+  background: var(--blue-300);
+}
+
+.wrapper button:focus {
+  background: var(--blue-300);
+}
+
+.wrapper button:disabled {
+  background: var(--gray-300);
+  cursor: auto;
+}

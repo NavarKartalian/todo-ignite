@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  gap: 12px;
+}
+
+.circleButton {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: var(--blue-300);
+  cursor: pointer;
+}
+
+.completedTask {
+  text-decoration: line-through;
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+.incompleteTask {
+  font-size: 0.875rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+.trashButton {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: color ease-in-out 0.2s;
+}
+
+.trashButton:hover {
+  color: var(--red-300);
+}
+
+.trashButton:focus {
+  color: var(--red-300);
+}
