@@ -1,19 +1,11 @@
 import styles from './TaskList.module.css';
 import Clipboard from '../../assets/Clipboard.svg';
 import { Task } from '../Task';
+import { useHandleTodo } from '../../context/handleTask';
 
-interface TaskListProps {
-  tasks: {
-    id: number;
-    task: string;
-    isComplete: boolean;
-  }[];
-  numOfCompletedTasks: number;
-  handleCompleteTask: (id: number) => void;
-  handleDeleteTask: (id: number) => void;
-}
+export function TaskList() {
+  const { tasks, numOfCompletedTasks, handleCompleteTask, handleDeleteTask } = useHandleTodo();
 
-export function TaskList({ tasks, handleCompleteTask, handleDeleteTask, numOfCompletedTasks }: TaskListProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.taskInfo}>
